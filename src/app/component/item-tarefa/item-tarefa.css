@@ -1,0 +1,118 @@
+.pagina {
+  min-height: 100vh;
+  background-color: #f5f5f7;
+  color: #1d1d1f;
+  padding: 40px;
+  box-sizing: border-box;
+}
+
+.lista-tarefas {
+  background-color: white;
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 30px;
+  border-radius: 12px;
+  border: 2px solid #2f2f2f;
+}
+
+.cabecalho {
+  margin-bottom: 24px;
+}
+
+.nova-tarefa {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+.nova-tarefa input {
+  flex: 1;
+  padding: 10px 14px;
+  border: 1px solid #d1d1d6;
+  border-radius: 8px;
+}
+
+.nova-tarefa input:focus {
+  outline: none;
+  border-color: #0FA958;
+}
+
+button {
+  font: inherit;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.2s ease,
+              transform 0.1s ease;
+}
+
+.botao-adicionar {
+  background-color: #0FA958;
+  color: white;
+  font-weight: 500;
+  padding: 10px;
+}
+
+.botao-adicionar:hover {
+  background-color: #0D9450;
+}
+
+.botao-adicionar:active {
+  transform: scale(0.97);
+}
+
+.tarefa {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 14px 0;
+}
+
+.tarefa input[type="checkbox"] {
+  accent-color: #0FA958;
+  width: 20px; height: 20px;
+}
+
+.tarefa span {
+  flex: 1;
+}
+
+.concluida {
+  text-decoration: line-through;
+  color: gray;
+}
+
+.botao-remover {
+  background-color: transparent;
+  color: #ff3b30;
+  padding: 8px 12px;
+}
+
+.botao-remover:hover {
+  background-color: rgba(255, 59, 48, 0.1);
+}
+
+.botao-remover:active {
+  transform: scale(0.97);
+}
+
+.resumo {
+  margin-top: 30px;
+  padding-top: 20px;
+}
+
+.resumo-item {
+  text-align: center;
+}
+
+.resumo-item span {
+  display: block;
+  color: #6e6e73;
+  margin-bottom: 8px;
+}
+
+.resumo-item strong {
+  display: block;
+  font-size: 28px;
+  font-weight: 600;
+}
